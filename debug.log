@@ -1,0 +1,132 @@
+INFO 2025-08-04 06:11:58,872 Watching for file changes with StatReloader
+INFO 2025-08-04 06:13:07,243 Watching for file changes with StatReloader
+INFO 2025-08-04 06:13:11,794 "GET / HTTP/1.1" 302 0
+INFO 2025-08-04 06:13:11,820 "GET /accounts/login/?next=/ HTTP/1.1" 200 3989
+INFO 2025-08-04 06:13:12,558 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2025-08-04 06:13:12,560 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-08-04 06:13:12,562 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-08-04 06:13:12,562 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-08-04 06:13:12,565 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-08-04 06:13:12,565 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-08-04 06:13:12,567 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-08-04 06:13:12,571 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-08-04 06:13:12,573 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-08-04 06:13:12,574 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-08-04 06:13:12,575 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-08-04 06:13:12,575 "GET /static/dist/img/login.png HTTP/1.1" 200 445475
+INFO 2025-08-04 06:13:12,576 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-08-04 06:13:12,750 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+WARNING 2025-08-04 06:13:12,816 Not Found: /favicon.ico
+WARNING 2025-08-04 06:13:12,816 "GET /favicon.ico HTTP/1.1" 404 8149
+INFO 2025-08-04 06:13:28,093 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-08-04 06:13:28,103 "GET / HTTP/1.1" 200 9298
+INFO 2025-08-04 06:13:28,115 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-08-04 06:13:28,129 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-08-04 06:13:28,197 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-08-04 06:13:31,504 "GET /student/list HTTP/1.1" 200 9954
+INFO 2025-08-04 06:13:38,086 "GET /staff/list/ HTTP/1.1" 200 9695
+INFO 2025-08-04 06:13:39,930 "GET /finance/list/ HTTP/1.1" 200 10355
+INFO 2025-08-04 06:13:53,543 "GET /result/view/all HTTP/1.1" 200 10295
+INFO 2025-08-04 06:13:55,694 "GET /session/list/ HTTP/1.1" 200 12292
+INFO 2025-08-04 06:14:02,235 "GET /staff/list/ HTTP/1.1" 200 9695
+INFO 2025-08-04 06:14:11,947 "GET /result/edit-results/ HTTP/1.1" 200 12069
+INFO 2025-08-04 06:14:25,460 "GET /current-session/ HTTP/1.1" 200 10697
+ERROR 2025-08-04 06:14:32,242 Internal Server Error: /current-session/
+Traceback (most recent call last):
+  File "/Users/gopikrishna/Desktop/Django-School-Management-System/venv7/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gopikrishna/Desktop/Django-School-Management-System/venv7/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gopikrishna/Desktop/Django-School-Management-System/venv7/lib/python3.11/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gopikrishna/Desktop/Django-School-Management-System/venv7/lib/python3.11/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gopikrishna/Desktop/Django-School-Management-System/venv7/lib/python3.11/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/gopikrishna/Desktop/Django-School-Management-System/apps/corecode/views.py", line 257, in post
+    form = self.form_Class(request.POST)
+           ^^^^^^^^^^^^^^^
+AttributeError: 'CurrentSessionAndTermView' object has no attribute 'form_Class'
+ERROR 2025-08-04 06:14:32,243 "POST /current-session/ HTTP/1.1" 500 82842
+INFO 2025-08-04 06:14:48,122 "GET /result/create/ HTTP/1.1" 200 10923
+INFO 2025-08-04 06:16:16,804 Watching for file changes with StatReloader
+INFO 2025-08-04 06:16:18,945 "GET / HTTP/1.1" 200 9298
+INFO 2025-08-04 06:16:24,946 "GET /current-session/ HTTP/1.1" 200 10697
+INFO 2025-08-04 06:16:27,288 "GET /result/edit-results/ HTTP/1.1" 200 12069
+INFO 2025-08-04 06:16:48,009 "GET /student/list HTTP/1.1" 200 9954
+INFO 2025-08-04 06:19:10,895 "GET /student/create/ HTTP/1.1" 200 13695
+INFO 2025-08-04 06:19:17,090 "GET /staff/list/ HTTP/1.1" 200 9695
+INFO 2025-08-04 06:19:20,884 "GET /student/list HTTP/1.1" 200 9954
+INFO 2025-08-04 06:19:24,346 "GET /finance/list/ HTTP/1.1" 200 10355
+INFO 2025-08-04 06:19:30,388 "GET /finance/1/detail/ HTTP/1.1" 200 11415
+INFO 2025-08-04 06:19:30,389 - Broken pipe from ('127.0.0.1', 56751)
+INFO 2025-08-04 06:19:30,390 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 10853
+INFO 2025-08-04 06:19:36,590 "GET /result/view/all HTTP/1.1" 200 10295
+INFO 2025-08-04 06:19:40,440 "GET /site-config HTTP/1.1" 200 10873
+INFO 2025-08-04 06:20:18,892 "POST /site-config HTTP/1.1" 200 10912
+INFO 2025-08-04 06:20:21,306 "GET /finance/list/ HTTP/1.1" 200 10355
+INFO 2025-08-04 06:20:23,203 "GET /student/list HTTP/1.1" 200 9954
+INFO 2025-08-04 06:20:23,952 "GET / HTTP/1.1" 200 9298
+WARNING 2025-08-04 06:20:26,763 Method Not Allowed (GET): /accounts/logout/
+WARNING 2025-08-04 06:20:26,768 "GET /accounts/logout/ HTTP/1.1" 405 0
+WARNING 2025-08-04 06:20:28,211 Method Not Allowed (GET): /accounts/logout/
+WARNING 2025-08-04 06:20:28,215 "GET /accounts/logout/ HTTP/1.1" 405 0
+INFO 2025-08-04 06:20:35,884 "GET / HTTP/1.1" 200 9298
+WARNING 2025-08-04 06:20:38,646 Method Not Allowed (GET): /accounts/logout/
+WARNING 2025-08-04 06:20:38,651 "GET /accounts/logout/ HTTP/1.1" 405 0
+INFO 2025-08-04 06:20:51,001 Watching for file changes with StatReloader
+INFO 2025-08-04 06:21:02,026 "GET / HTTP/1.1" 302 0
+INFO 2025-08-04 06:21:02,038 "GET /accounts/login/?next=/ HTTP/1.1" 200 3989
+INFO 2025-08-04 06:21:02,084 "GET /static/plugins/toastr/toastr.min.css HTTP/1.1" 200 6454
+INFO 2025-08-04 06:21:02,086 "GET /static/dist/css/login-page.css HTTP/1.1" 200 9064
+INFO 2025-08-04 06:21:02,086 "GET /static/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 58582
+INFO 2025-08-04 06:21:02,088 "GET /static/plugins/overlayScrollbars/css/OverlayScrollbars.min.css HTTP/1.1" 200 19736
+INFO 2025-08-04 06:21:02,089 "GET /static/dist/js/jquery.formset.js HTTP/1.1" 200 13881
+INFO 2025-08-04 06:21:02,091 "GET /static/plugins/toastr/toastr.min.js HTTP/1.1" 200 5253
+INFO 2025-08-04 06:21:02,093 "GET /static/plugins/jquery/jquery.min.js HTTP/1.1" 200 88147
+INFO 2025-08-04 06:21:02,095 "GET /static/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js HTTP/1.1" 200 42395
+INFO 2025-08-04 06:21:02,096 "GET /static/dist/js/adminlte.js HTTP/1.1" 200 59416
+INFO 2025-08-04 06:21:02,097 "GET /static/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80704
+INFO 2025-08-04 06:21:02,098 "GET /static/dist/js/demo.js HTTP/1.1" 200 13042
+INFO 2025-08-04 06:21:02,099 "GET /static/dist/img/login.png HTTP/1.1" 200 445475
+INFO 2025-08-04 06:21:02,100 "GET /static/dist/css/adminlte.min.css HTTP/1.1" 200 686718
+INFO 2025-08-04 06:21:02,282 "GET /static/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 79444
+WARNING 2025-08-04 06:21:02,304 Not Found: /favicon.ico
+WARNING 2025-08-04 06:21:02,305 "GET /favicon.ico HTTP/1.1" 404 8149
+INFO 2025-08-04 06:21:18,700 "POST /accounts/login/ HTTP/1.1" 302 0
+INFO 2025-08-04 06:21:18,708 "GET / HTTP/1.1" 200 9298
+INFO 2025-08-04 06:21:18,718 "GET /static/plugins/Datatables/datatables.min.css HTTP/1.1" 200 25807
+INFO 2025-08-04 06:21:18,723 "GET /static/plugins/Datatables/datatables.min.js HTTP/1.1" 200 2042927
+INFO 2025-08-04 06:21:18,731 "GET /static/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 13584
+INFO 2025-08-04 06:21:24,803 "GET /staff/list/ HTTP/1.1" 200 9695
+INFO 2025-08-04 06:21:25,901 "GET / HTTP/1.1" 200 9298
+INFO 2025-08-04 06:21:27,482 "GET /site-config HTTP/1.1" 200 10873
+INFO 2025-08-04 06:22:18,073 "POST /site-config HTTP/1.1" 200 10932
+INFO 2025-08-04 06:22:21,358 "POST /site-config HTTP/1.1" 200 10932
+INFO 2025-08-04 06:22:25,185 "POST /site-config HTTP/1.1" 200 10932
+INFO 2025-08-04 06:22:27,857 "POST /site-config HTTP/1.1" 200 10932
+INFO 2025-08-04 06:22:34,127 "GET /finance/list/ HTTP/1.1" 200 10355
+INFO 2025-08-04 06:22:35,248 "GET /staff/list/ HTTP/1.1" 200 9695
+INFO 2025-08-04 06:22:36,269 "GET /student/list HTTP/1.1" 200 9954
+INFO 2025-08-04 06:22:43,265 "GET /student/create/ HTTP/1.1" 200 13695
+INFO 2025-08-04 06:24:53,042 "POST /student/create/ HTTP/1.1" 200 14184
+INFO 2025-08-04 06:25:01,274 "POST /student/create/ HTTP/1.1" 302 0
+INFO 2025-08-04 06:25:01,287 "GET /student/4/ HTTP/1.1" 200 11293
+INFO 2025-08-04 06:25:01,299 "GET /static/dist/img/avatar.png HTTP/1.1" 200 8543
+INFO 2025-08-04 06:25:16,459 "GET /finance/list/ HTTP/1.1" 200 10355
+INFO 2025-08-04 06:25:19,996 "GET /finance/1/detail/ HTTP/1.1" 200 11415
+INFO 2025-08-04 06:25:19,998 - Broken pipe from ('127.0.0.1', 56837)
+INFO 2025-08-04 06:25:20,005 "GET /finance/receipt/create?invoice=1 HTTP/1.1" 200 10853
+INFO 2025-08-04 06:25:28,182 "GET /finance/create/ HTTP/1.1" 200 13749
+INFO 2025-08-04 06:25:41,606 "GET /student/4/ HTTP/1.1" 200 11147
+INFO 2025-08-04 06:25:43,224 "GET /student/create/ HTTP/1.1" 200 13695
+INFO 2025-08-04 06:25:45,046 "GET /result/edit-results/ HTTP/1.1" 200 12069
+INFO 2025-08-04 06:26:08,596 "GET /result/edit-results/ HTTP/1.1" 200 12069
+INFO 2025-08-04 06:26:10,108 "GET /result/view/all HTTP/1.1" 200 10295
+INFO 2025-08-04 06:26:11,493 "GET /result/edit-results/ HTTP/1.1" 200 12069
+INFO 2025-08-04 06:26:13,610 "GET /session/list/ HTTP/1.1" 200 12292
